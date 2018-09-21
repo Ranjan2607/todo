@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/mainlay"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_below="@+id/date"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/submain"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/datetile"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:text="Description"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+       <TextView
+            android:id="@+id/desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/datetile"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="3dp"
+            android:text="Date"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/datetile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="3dp"
+            android:layout_marginLeft="10dp"
+            android:text="Title"
+           />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/toggle_selector"
+            android:textOff=""
+            android:textOn=""
+            />
+    </RelativeLayout>
+</LinearLayout>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:text="Status"
+        android:textColor="#ffffff"
+        android:background="#1cbeca"
+        android:visibility="visible" />
+</RelativeLayout>

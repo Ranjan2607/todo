@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">to-do</string>
+
+    <string name="empty_list_text">No Record</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="add_record">Add Record</string>
+    <string name="export_records">Export To Excel</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Cancel</string>
+
+    <string name="enter_desc">Note</string>
+    <string name="enter_title">Title</string>
+
+</resources>
